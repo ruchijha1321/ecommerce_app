@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
-export default function CheckoutSteps({shipping, confirmOrder, payment}) {
+export default function CheckoutSteps({shipping, confirmOrder}) {
     return (
-
         <div className="checkout-progress d-flex justify-content-center mt-5">
             {
             shipping ?
@@ -30,21 +29,6 @@ export default function CheckoutSteps({shipping, confirmOrder, payment}) {
                 <div className="triangle-incomplete"></div>
              </Link>
             }
-
-            
-            { payment ?
-            <Link to="/payment">
-                <div className="triangle2-active"></div>
-                <div className="step active-step">Payment</div>
-                <div className="triangle-active"></div>
-            </Link>:
-             <Link to="/payment">
-                <div className="triangle2-incomplete"></div>
-                <div className="step incomplete">Payment</div>
-                <div className="triangle-incomplete"></div>
-             </Link>
-            }
-    
-      </div>
+        </div>
     )
 }
