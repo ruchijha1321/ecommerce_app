@@ -1,44 +1,67 @@
-# JVL cart
+# E-commerce Application
 
-an E-commerce Website built with MERN stack.
+A full-featured e-commerce web application built using the **MERN stack** (MongoDB, Express.js, React, Node.js).
 
-## Instructions
+---
 
-after cloning, run this command in the root folder
-```bash
-npm install
-```
-navigate to "frontend" folder, run these commands 
-```bash
-npm install
-npm run build
-```
-wait for application build
-after that open the backend/config/config.env
-and update the MongoDB connection string
-```bash
-...
-DB_LOCAL_URI=mongodb://localhost:27017/jvlcart
-```
+## Setup Instructions
 
-navigate back to "root" folder and run this command for loading demo data
-```bash
-npm run seeder
-```
+1. **Clone the Repository**
+   Clone the project and navigate to the root directory.
 
-run this below command to run the app in production mode
-```bash
-npm run prod
-```
+2. **Install Server Dependencies**
 
+   ```bash
+   npm install
+   ```
 
-## Test
-open the http://localhost:8000 and test the 
+3. **Build Frontend**
+   Navigate to the `frontend` directory and run:
 
-## Postman Collection
-https://www.postman.com/jvlcode/workspace/nodejs-ecommerce/collection/19530322-997cf450-820a-4852-bc1f-a93c9072d6ec?action=share&creator=19530322
+   ```bash
+   npm install
+   npm run build
+   ```
 
+4. **Configure Environment Variables**
+   Open the environment configuration file (e.g., `backend/config/config.env`) and set your MongoDB connection string:
+
+   ```env
+   DB_LOCAL_URI=mongodb://localhost:27017/your-database-name
+   ```
+
+5. **Load Sample Data (Optional)**
+   From the root directory, run:
+
+   ```bash
+   npm run seeder
+   ```
+
+6. **Run the Application in Production Mode**
+
+   ```bash
+   npm run prod
+   ```
+
+---
+
+## Access the Application
+
+Once the server is running, open your browser and go to:
+**[http://localhost:8000](http://localhost:8000)**
+
+---
+
+## API Documentation
+
+You can import the API collection into Postman using a shared link or local file as provided with the project.
+
+---
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+---
+
+Let me know if you'd like this adapted for Docker, CI/CD, or cloud deployment.
